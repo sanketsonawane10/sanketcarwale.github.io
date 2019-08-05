@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Carwale</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  
+
+</head>
+<body>
+
+
+<div class="container-fluid">
+
+    <div class="row">
+
+    <div class="col-lg-4" id="first">
+
+        <span id="maintext">Version</span><br/>
+        <span id="subtext">Trendline 1.0L(P)</span> 
+            <span id="changeit" style="font-size:20px;margin-left: 7px;box-sizing: border-box;color: #b2abab" class="fa fa-angle-right rgt">
+            </span>
+        
+    </div>
+  
+    
+    </div> 
+</div>
+
+
+<div class="sidebar_menu">
+
+   <div class="slide-left">
+        <span  style="font-size:20px;color:#b2abab;box-sizing: border-box" class="fa fa-angle-left lft">
+        </span><span id="menutexthead" style="color:black;padding-left: 15px;box-sizing: border-box" > Select Version </span><br/>
+
+   </div>
+      
+
+
+		<ul class="navigation_section">
+            <li class="navigation_item" id="sas">
+                   </li>
+			<li class="navigation_item" id="profile">
+                    <span class="unique">Trendline 1.0L(P)</span><br>
+                    <span>Petrol  |  Manual  |  &#8377;6,82,872</span>
+			</li>
+			<li class="navigation_item" id="education">
+                    <span class="unique">Comfortline 1.0L(P)</span><br>
+                    <span>Petrol  |  Manual  |  &#8377;7,82,872</span>
+
+			</li>
+			<li class="navigation_item" id="work_experience">
+                    <span class="unique">Trendline 1.5L(D) </span><br>
+                    <span>Diesel  |  Manual  |  &#8377;8,82,872</span>
+			</li>
+			<li class="navigation_item" id="skills">
+                    <span class="unique">Highline Plus 1.0L(P) 16 Alloy </span><br>
+                    <span>Petrol  |  Manual  |  &#8377;8,82,872</span>
+			</li>
+			<li class="navigation_item" id="interests">
+                    <span class="unique">Comfortline 1.5L(D) </span><br>
+                    <span>Diesel  |  Manual  |  &#8377;9,82,872</span>
+			</li>
+			<li class="navigation_item" id="portfolio">
+                    <span class="unique">Highline Plus 1.5L(D) 16 Alloy </span><br>
+                    <span>Diesel  |  Manual |  &#8377;11,82,872</span>
+			</li>
+			<li class="navigation_item" id="contact">
+                    <span class="unique"> GT TSI Sport</span><br>
+                    <span>Petrol  |  Automatic |  &#8377;11,82,872</span>
+            </li>
+            <li class="navigation_item" id="contact">
+                    <span class="unique">Comfortline 1.5L(D) </span><br>
+                    <span>Diesel  |  Manual  |  &#8377;6,82,872</span>
+                </li>
+                <li class="navigation_item" id="contact">
+                        <span class="unique">Trendline 1.5L(D) </span><br>
+                        <span>Diesel  |  Manual  |  &#8377;6,82,872</span>
+                    </li>
+                    <li class="navigation_item" id="contact">
+                            <span class="unique"> GT TSI Sport</span><br>
+                            <span>Petrol  |  Automatic |  &#8377;6,82,872</span>
+                        </li>
+                        <li class="navigation_item" id="contact">
+                                <span class="unique">Highline Plus 1.5L(D) 16 Alloy </span><br>
+                    <span>Diesel  |  Manual |  &#8377;6,82,872</span>
+                            </li>
+            
+		</ul>
+    
+		
+	</div><!-- End of sidebar -->
+
+
+
+<script>
+
+$(function(){    
+
+$("li").click(function(){
+
+
+$("#subtext").text($(this).children(".unique").text())
+$(".sidebar_menu").removeClass("hide_menu");
+
+});
+
+	$(".slide-left").click(function(){
+		$(".sidebar_menu").removeClass("hide_menu");
+		
+	});
+
+	$("#first").click(function(){
+		$(".sidebar_menu").addClass("hide_menu");
+		
+	});
+});
+
+
+
+
+
+
+
+
+</script>
+
+
+</body>
+
+</html>    
+
+
+
